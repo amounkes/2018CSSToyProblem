@@ -1,0 +1,20 @@
+.flag {
+    height: 400px;
+    width: 600px;
+    border: 1px solid black;
+}
+
+.stars {
+    background-image: url(../sampleImages/easy.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.short__stripe {
+    width: 300px;
+}
+
+.red {
+    background: red;
+}
+
