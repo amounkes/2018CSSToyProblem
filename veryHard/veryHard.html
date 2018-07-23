@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>veryHard CSS</title>
+        <link rel="stylesheet" href="veryHard.css">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Raleway:300,300i,400,600,700" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="shakespeare_page">
+            <!-- <nav> -->
+                <header class="main_nav">
+                    <div class="main_nav-logo">Early Modern Playwrights</div>
+                    <ul class="main_nav-links">
+                        <li class="main_nav-link"><a href="#">Shakespeare</a></li>
+                        <li class="main_nav-link"><a href="#">Marlowe</a></li>
+                        <li class="main_nav-link"><a href="#">Middleton</a></li>
+                        <li class="main_nav-link"><a href="#">Dekker</a></li>  
+                        <li class="main_nav-link"><a href="#">Webster</a></li>            
+                    </ul>
+                </header>
+            <!-- </nav> -->
+
+
+                <section class="top_section">
+                    <div class="image_container">
+                        <img src="Shakespeare.jpg" alt="William Shakespeare" height="300px" width="300px">
+                    </div>
+
+                    <div class="smallbox smallbox1">
+                        <p>The Rose</p>
+                    </div>
+                    <div class="smallbox smallbox2">
+                        <p>The Globe</p>
+                    </div>
+                </section>
+                
+                <main>
+                    <h1>Shakespeare's Life and Works</h1>
+                    <section class="cards">
+                        <div class="cards_list" id="card_one">
+                            <p>Histories</p>
+                        </div>
+                        <div class="cards_list" id="card_two">
+                            <p>Comedies</p>
+                        </div>
+                        <div class="cards_list" id="card_three">
+                            <p>Tragedies</p>
+                        </div>                        
+                    </section>
+                    <section class="article_wrapper">    
+                        <button class="tablink" onclick="openTab('firsttab', this)" id="defaultOpen">Early Life</button>
+                        <button class="tablink" onclick="openTab('secondtab', this)">London</button>
+                        <button class="tablink" onclick="openTab('thirdtab', this)" >Collaboration</button>
+                        <button class="tablink" onclick="openTab('fourthtab', this)">Conspiracies</button>
+
+                        <article id="firsttab" class="articlecontent">
+                            <p>
+                                Born in Stratford-upon-Avon in 1564, Shakespeare's birthday is commonly observed on April 23rd, given that his name appears in the baptismal registry three days later on the 26th. 
+                            </p>
+                            <p>
+                                April 23rd, coincidentally, is also St. George's day (the patron saint of England), as well as the date of death for Willliam Shakespeare 52 years later in 1616.
+                            </p>
+                        </article>
+                        <article id="secondtab" class="articlecontent">
+                            <p>
+                                Tab Two.
+                            </p>
+                            <p>
+                                More Text.
+                            </p>
+                        </article>        
+                        <article id="thirdtab" class="articlecontent">
+                            <p>
+                                Tab Tree.
+                            </p>
+                            <p>
+                                
+                            </p>
+                        </article>
+                        <article id="fourthtab" class="articlecontent">
+                            <p>
+                                Tab Four
+                            </p>
+                            <p>
+                                More Text.
+                            </p>
+                        </article>   
+                    </section> 
+                </main>    
+
+                <footer class="footer">
+                    <div class="copyright">&copy; Amy Mounkes</div>
+                    <div class="footer_links">
+                        <div class="footer_link">
+                            <a href="http://linkedin.com">LinkedIn</a>
+                        </div>
+                        <div class="footer_link">
+                            <a href="http://instagram.com">InstaGram</a>
+                        </div>
+                    </div>
+            </footer>
+        </div>
+    </body>
+    <script>
+        function openTab(tabName, elmnt) {
+            var i, articlecontent, tablinks;
+            articlecontent = document.getElementsByClassName("articlecontent");
+            for (i = 0; i < articlecontent.length; i++) {
+                articlecontent[i].style.display = "none";
+            }
+
+        document.getElementById(tabName).style.display = "block";
+    }
+
+    document.getElementById("defaultOpen").click();
+        
+    </script>
+
+</html>    

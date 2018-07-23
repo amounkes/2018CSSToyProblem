@@ -1,0 +1,51 @@
+h1 {
+    font-family: 'Raleway', sans-serif;
+    margin: auto;
+    text-align: center;
+}
+
+.container {
+    display: table;
+    max-width: 900px;
+    margin:  auto;
+    background-color: aquamarine;
+    padding: 2%;
+}
+
+.llama_item_name {
+    font-family: 'Raleway', sans-serif;
+    text-align: top;
+    font-size: 1.2rem;
+}
+
+.llama_item_description {
+    font-family: 'Playfair Display', serif;
+    text-align: top;
+    font-size: 0.9rem;
+}
+
+.llama_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    clear: both;
+}
+
+.llama_image {
+    width: 150px;
+    clear: both;
+    border-radius: 5%;
+    text-align: center;
+}
+
+.llama_item {
+    width: 23%;
+    clear: both;
+    display: inline-block;
+    text-align: center;
+    border: 1px dashed black;
+    height: 345px;
+    position: relative;
+}
+
