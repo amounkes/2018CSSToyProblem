@@ -14,8 +14,6 @@ body {
     font-family: 'Raleway', sans-serif;
     position: relative;
     height: 100%;
-    border: 1px solid black;
-
 }
 
 .shakespeare_page {
@@ -32,17 +30,6 @@ body {
 /************************
 HEADER
 ************************/
-/*
-nav {
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    height: 3rem;
-    padding: 1rem;
-    border: 1px solid black;
-
-}*/
 
 .main_nav {
     background: #777;
@@ -53,10 +40,8 @@ nav {
     left: 0;
     font-size: 1.2rem;
     width: 100%;
-    height: 3.5rem;
+    height: 4.5rem;
     margin: 0;
-    border: 1px solid black;
-
 }
 
 .main_nav-logo {
@@ -64,23 +49,45 @@ nav {
     margin-top: 1rem;
     font-size: 1rem;
     text-align: left;
+    font-weight: bold;
 }
 
 .main_nav-links {
     list-style: none;
     text-align: right;
-    vertical-align: middle;
-    position: relative;
-    font-size: 0.9rem;
     margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    font-size: 0.9rem;
 }
 
 .main_nav-link {
     display: inline-block;
     margin: 0;
-    /* vertical-align: middle; */
+    padding: 0 0.2rem;
+    vertical-align: middle;
 }
 
+.main_nav-link a,
+.footer_link a {
+    text-decoration: none;
+    color: black;
+    padding: 2px;
+}
+
+.main_nav-link a:visited,
+.footer_link a:visited {
+    color: black;
+}
+
+.main_nav-link a:active,
+.main_nav-link a:hover,
+.footer_link a:active,
+.footer_link a:hover {
+    color: #777;
+    background: white;
+    border-radius: 5%;
+}
 
 
 
@@ -93,16 +100,26 @@ FOOTER
 
 
 .footer {
-    border: 1px solid black;
     width: 100%;
+    height: 2.5rem;
     background: #777;
     margin: 0;
+}
 
+.copyright {
+    float: left;
+    vertical-align: middle;
+    margin-top: 10px;
 }
 
 .footer_link {
-    display: inline-block;
-    text-align: right;
+    float: right;
+    margin-top: 10px;
+    padding: 0 5px;
+}
+
+.footer_link a {
+    text-decoration: none;
 }
 
 
@@ -117,21 +134,16 @@ TOP SECTION
     width: 90%;
     height: 300px;
     position: relative;
-    border: 1px solid black;
 }
 
 img {
     position: absolute;
     left: 0;
-    /* width: 60%; */
-    /* max-height: 100%; */
     margin: auto 3rem auto 0;
     text-align: center;
-    border: 1px solid black; 
 }
 
 .smallbox {
-    border: 2px solid black;
     color: white;
     background: #777;
     display: block;
@@ -164,21 +176,19 @@ CARDS
 main {
     width: 90%;
     height: 60%;
-    margin: 4rem auto 3rem auto;
-    border: 1px solid black;
-
+    margin: 3rem auto 3rem auto;
   }
   
 h1 {
     background: #777;
     text-align: center;
     padding: 1rem;
-    border: 1px solid black;
   }
   
   .cards {
     margin: 0 auto;
-    width: 100%;
+    /* width: 100%; */
+    width: 585px;
   }
 
   .cards_list {
@@ -186,13 +196,10 @@ h1 {
     display: inline-block;
     width: 30%;
     height: 7rem;
-    margin: 0 0.5rem 2rem 0.5rem;
+    margin: 0 0.52rem 2rem 0.52rem;
     padding: 0.2rem;
-    /* margin-right: auto; */
-    /* margin-left: auto; */
     color: white;
     vertical-align: middle;
-    border: 2px solid black;
     text-align: center;
   }
 
@@ -213,7 +220,7 @@ ARTICLE SECTION
 .article_wrapper {
     height: 30%;
     width: 100%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     text-align: center;
     margin: auto;
 }
@@ -222,12 +229,12 @@ ARTICLE SECTION
     background-color: #777;
     color: white;
     float: left;
-    border: none;
     outline: none;
     cursor: pointer;
     padding: 0.9rem 1rem;
     font-size: 1.1rem;
     width: 25%;
+    border-bottom: 1px white solid;
 }
 
 .tablink:hover {
