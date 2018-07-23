@@ -7,8 +7,7 @@ h1 {
 .container {
     display: table;
     max-width: 900px;
-    margin:  auto;
-    background-color: aquamarine;
+    margin: 0 auto;
     padding: 2%;
 }
 
@@ -16,11 +15,12 @@ h1 {
     font-family: 'Raleway', sans-serif;
     text-align: top;
     font-size: 1.2rem;
+    vertical-align: middle;
 }
 
 .llama_item_description {
     font-family: 'Playfair Display', serif;
-    text-align: top;
+    /* text-align: center; */
     font-size: 0.9rem;
 }
 
@@ -30,6 +30,16 @@ h1 {
     list-style: none;
     text-align: center;
     clear: both;
+    float: left;
+    display: block;
+}
+
+.row_one {
+    display: flex;
+}
+
+.row_two {
+    display: flex;
 }
 
 .llama_image {
@@ -44,8 +54,6 @@ h1 {
     clear: both;
     display: inline-block;
     text-align: center;
-    border: 1px dashed black;
     height: 345px;
-    position: relative;
 }
 
